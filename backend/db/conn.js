@@ -2,8 +2,7 @@
 const { Client } = require('pg');
 const client = new Client({
     user: 'randy',
-    host: 'blogger-app1-fbcm5kbwn-randy-fosters-projects.vercel.app
-',
+    host: '127.0.0.1',
     database: 'blogdb',
     password: 'randy',
     port: 5432,
