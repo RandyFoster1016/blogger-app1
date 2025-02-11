@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = http://localhost:8000;
+const port = 8000;
 const client = require('./db/conn.js');
 const cors = require('cors');
 
