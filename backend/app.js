@@ -4,7 +4,6 @@ const port = 8000;
 const client = require('./db/conn.js');
 const cors = require('cors');
 
-app.use(express.static('public'))
 app.use(express.json());
 app.use(cors());
 app.use('/uploads',express.static('uploads'));
