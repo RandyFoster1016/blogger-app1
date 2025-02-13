@@ -4,6 +4,12 @@ const port = 8000;
 const client = require('./db/conn.js');
 const cors = require('cors');
 
+import { createClient } from '@supabase/supabase-js'
+
+const supabaseUrl = 'https://uuhzkahrlsdxcuodqujy.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
 app.use(express.json());
 app.use(cors());
 app.use('/uploads',express.static('uploads'));
